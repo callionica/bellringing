@@ -13,3 +13,20 @@ This option uses the existing sensor, but adds a wireless adapter to send the da
 2. SIMBELL wireless ringing sensors
 
 This option does not use the existing sensor. Instead the Saxilby would have a reflector stuck to the bell and a wireless SIMBELL transmitter would be attached to the frame, while the computer would be plugged into a wireless SIMBELL receiver.
+
+We went with the SIMBELL option connected to a Mac running Windows in a Parallels VM with Beltower ringing software.
+
+## Setting up Saxilby and SIMBELL
+
+1. Attach the reflector to the Saxilby: we attached the reflector to the Saxilby on the left edge of the wheel with the bottom of the reflector aligned with the bolt, so just slightly above half way vertically.
+2. Attach the transmitter to the Saxilby: lie the box on the frame facing the reflector and attach with something appropriate
+3. Connect the receiver to the computer:
+a) Plug the receiver into the USB port
+b) Direct the USB device to connect to the virtual machine in Parallels
+c) In Windows 7, we had to download the drivers from the SIMBELL website; otherwise let Windows install the drivers automatically
+d) Open Device Manager and see which COM port has been assigned (in our case, `COM3`)
+e) In Beltower: `Settings | Sensors...` > Set `Input Mode` to `Serial Interface` and set the `Input` to `COM3` or whatever port you saw in Device Manager
+f) In Beltower: `Options | Ring Options...` set `Bell Sensors` to `1` or the number of your bell sensor
+g) Turn on the transmitter!
+
+You should now be able to hear your bell ring in Beltower when the reflector on the Saxilby moves past the sensor.
