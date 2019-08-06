@@ -1,4 +1,4 @@
-# Saxilby Ringing Simulator
+# Saxilby bellringing simulator & Simbell wireless sensor
 
 The Saxilby ringing simulator comes with a (magnetic?) position sensor .
 The sensor is wired with a short cable that has an AV end, and there's a long AV-to-serial cable, and a serial-to-USB cable.
@@ -30,3 +30,11 @@ f) In Beltower: `Options | Ring Options...` set `Bell Sensors` to `1` or the num
 g) Turn on the transmitter!
 
 You should now be able to hear your bell ring in Beltower when the reflector on the Saxilby moves past the sensor.
+
+## Making Saxilby & Simbell work together
+The Simbell sensor is quite sensitive and, as delivered, will probably detect not just the reflective strip, but also the edges of the metal bell-shaped weight that is attached to the Saxilby. To ensure good detection of only the reflective strip, we recommend the following steps:
+1. Tape the edge of the bell weight with black tape all along the bottom
+2. If your simulator is in normal lighting conditions, attach a piece of cardboard above the sensor to partially shield it from sunlight
+3. Adjust the sensitivity of the sensor so that it does not detect any seams in the tape, but still detects the reflective strip (Instructions: [SIMBELL SETUP - ADJUSTING TRANSMITTER SENSITIVITY](https://www.simbell.co.uk/video.htm))
+
+When making changes and testing your setup, you can do some testing by moving the bell past the sensor with your hands, but before declaring victory, make sure to do some ringing so you can see how the sensor responds to the full range of motion at realistic speeds.
