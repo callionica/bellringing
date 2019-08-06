@@ -1,5 +1,33 @@
 # Saxilby bellringing simulator & Simbell wireless sensor
 
+
+## Connecting to the Saxilby wirelessly
+As delivered, the Saxilby required a wired connection from its sensor to the computer on which we'd run the bellringing software ([Abel](http://www.abelsim.co.uk)). Because we installed the Saxilby upstairs in our home and we ring below it downstairs, we did not want to make another hole or a larger hole to accomodate the wire for the sensor, so we decided to go for a wireless option. There are a few ways of making a wireless connection between the bell sensor and the ringing chamber, but we decided to go for a [Simbell Wireless transmitter/receiver](https://www.simbell.co.uk/index.htm).
+
+The Simbell system consists of:
+1. A reflective sticky strip to attach to the wheel of the Saxilby
+2. A transmitter to attach to the frame of the Saxilby which contains a sensor that detects when the reflective strip moves past it
+3. A receiver that attaches to the computer running your bellringing software via USB and receives the signals from the transmitter wirelessly
+
+The transmitter gets power either from a battery pack or a DC power supply.
+The receiver gets power over USB from the host computer.
+
+
+## Making Saxilby & Simbell work together
+The Simbell sensor is quite sensitive and, as delivered, detected not just the reflective strip, but also the edges of the metal bell-shaped weight that is attached to the Saxilby. To ensure good detection of only the reflective strip, we took the following steps:
+1. Taped the edge of the Saxilby's bell weight with black tape all along the bottom
+2. Taped a stiff piece of cardboard above the Simbell sensor to partially shield it from sunlight
+3. Adjusted the sensitivity of the Simbell sensor so that it did not detect any seams in the tape, but still detected the reflective strip (Instructions: [SIMBELL SETUP - ADJUSTING TRANSMITTER SENSITIVITY](https://www.simbell.co.uk/video.htm))
+
+When making changes and testing your setup, you can do some testing by moving the bell past the sensor with your hands, but before declaring victory, make sure to do some ringing so you can see how the sensor responds to the full range of motion at realistic speeds.
+
+## Windows 10 S Mode, Simbell, and Abel
+Bellringing using a simulator can be achieved with a cheap Windows 10 laptop running Abel and Simbell. But in order to install Abel software and the Simbell drivers, you need to switch your computer out of Windows 10 *S* or Windows 10 *in S Mode* (which is the same thing) if that's what it's running. You can switch Windows 10 out of S Mode without cost, so don't be afraid to buy a laptop with "Windows 10 S". Windows 10 Home works fine. Instructions: [How to switch out of S Mode](https://support.microsoft.com/en-gb/help/4456067/windows-10-switch-out-of-s-mode)
+
+With Windows switched out of S Mode, the Simbell drivers were found and installed automatically by Windows 10. There was no need to install the drivers from the Simbell site.
+
+------
+
 The Saxilby ringing simulator comes with a (magnetic?) position sensor .
 The sensor is wired with a short cable that has an AV end, and there's a long AV-to-serial cable, and a serial-to-USB cable.
 The sensor data needs to make its way to the ringing software on the computer so, as supplied, there needs to be a route for the sensor wiring to run from the Saxilby wheel to the computer.
@@ -16,6 +44,7 @@ This option does not use the existing sensor. Instead the Saxilby would have a r
 
 We went with the SIMBELL option connected to a Mac running Windows in a Parallels VM with Beltower ringing software.
 
+-----
 ## Setting up Saxilby and SIMBELL
 
 1. Attach the reflector to the Saxilby: we attached the reflector to the Saxilby on the left edge of the wheel with the bottom of the reflector aligned with the bolt, so just slightly above half way vertically.
@@ -30,14 +59,3 @@ f) In Beltower: `Options | Ring Options...` set `Bell Sensors` to `1` or the num
 g) Turn on the transmitter!
 
 You should now be able to hear your bell ring in Beltower when the reflector on the Saxilby moves past the sensor.
-
-## Making Saxilby & Simbell work together
-The Simbell sensor is quite sensitive and, as delivered, will probably detect not just the reflective strip, but also the edges of the metal bell-shaped weight that is attached to the Saxilby. To ensure good detection of only the reflective strip, we recommend the following steps:
-1. Tape the edge of the bell weight with black tape all along the bottom
-2. If your simulator is in normal lighting conditions, attach a piece of cardboard above the sensor to partially shield it from sunlight
-3. Adjust the sensitivity of the sensor so that it does not detect any seams in the tape, but still detects the reflective strip (Instructions: [SIMBELL SETUP - ADJUSTING TRANSMITTER SENSITIVITY](https://www.simbell.co.uk/video.htm))
-
-When making changes and testing your setup, you can do some testing by moving the bell past the sensor with your hands, but before declaring victory, make sure to do some ringing so you can see how the sensor responds to the full range of motion at realistic speeds.
-
-## Windows 10 S Mode, Simbell, and Abel
-Bellringing using a simulator can be achieved with a cheap Windows 10 laptop running Abel and Simbell. But in order to install Abel software and the Simbell drivers, you need to make sure that your laptop is not running Windows 10 *S* or Windows 10 *in S Mode* (which is the same thing). You can switch Windows 10 out of S Mode without cost, so don't be afraid to buy a laptop with "Windows 10 S". Windows 10 Home works fine. Instructions: [How to switch out of S Mode](https://support.microsoft.com/en-gb/help/4456067/windows-10-switch-out-of-s-mode)
