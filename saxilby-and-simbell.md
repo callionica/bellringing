@@ -24,6 +24,9 @@ Windows 10 Home works fine with bellringing software. There's no need to buy Win
 
 With Windows switched out of S Mode, the Simbell drivers were found and installed automatically by Windows 10. There was no need to install the drivers from the Simbell site.
 
+## Simbell and All the Ports
+Because I knew that we would be unplugging the Simbell receiver from the laptop so that it could be used for things other than bellringing, during setup I plugged the Simbell receiver into each USB port on the laptop in turn and used Device Manager to configure the settings to assign it to COM port 3. This way it won't matter which USB port the receiver is plugged into, there won't be any need to change software settings to get things to work.
+
 ------
 
 The Saxilby ringing simulator comes with a (magnetic?) position sensor .
