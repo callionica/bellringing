@@ -6,12 +6,8 @@ As delivered, the Saxilby required a wired connection from its sensor to the com
 
 The Simbell system consists of:
 1. A reflective sticky strip to attach to the wheel of the Saxilby
-2. A transmitter to attach to the frame of the Saxilby which contains a sensor that detects when the reflective strip moves past it
-3. A receiver that attaches to the computer running your bellringing software via USB and receives the signals from the transmitter wirelessly
-
-The transmitter gets power either from a battery pack or a DC power supply.
-The receiver gets power over USB from the host computer.
-
+2. A transmitter to attach to the frame of the Saxilby which contains a sensor that detects when the reflective strip moves past it. The transmitter gets power either from a battery pack or a DC power supply.
+3. A receiver that attaches to the computer running your bellringing software via USB and receives the signals from the transmitter wirelessly. The receiver gets power over USB from the host computer.
 
 ## Making Saxilby & Simbell work together
 The Simbell sensor is quite sensitive and, as delivered, detected not just the reflective strip, but also the edges of the metal bell-shaped weight that is attached to the Saxilby. To ensure good detection of only the reflective strip, we took the following steps:
@@ -22,7 +18,9 @@ The Simbell sensor is quite sensitive and, as delivered, detected not just the r
 When making changes and testing your setup, you can do some testing by moving the bell past the sensor with your hands, but before declaring victory, make sure to do some ringing so you can see how the sensor responds to the full range of motion at realistic speeds.
 
 ## Windows 10 S Mode, Simbell, and Abel
-Bellringing using a simulator can be achieved with a cheap Windows 10 laptop running Abel and Simbell. But in order to install Abel software and the Simbell drivers, you need to switch your computer out of Windows 10 *S* or Windows 10 *in S Mode* (which is the same thing) if that's what it's running. You can switch Windows 10 out of S Mode without cost, so don't be afraid to buy a laptop with "Windows 10 S". Windows 10 Home works fine. Instructions: [How to switch out of S Mode](https://support.microsoft.com/en-gb/help/4456067/windows-10-switch-out-of-s-mode)
+Bellringing using a simulator can be achieved with a cheap Windows 10 laptop running Abel and Simbell. But in order to install Abel software and the Simbell drivers, you need to switch your computer out of Windows 10 *S* or Windows 10 *in S Mode* (which is the same thing) if that's what it's running. You can switch Windows 10 out of S Mode without cost, so don't be afraid to buy a laptop with "Windows 10 S" as the operating system. Instructions: [How to switch out of S Mode](https://support.microsoft.com/en-gb/help/4456067/windows-10-switch-out-of-s-mode)
+
+Windows 10 Home works fine with bellringing software. There's no need to buy Windows 10 Pro for this purpose. 
 
 With Windows switched out of S Mode, the Simbell drivers were found and installed automatically by Windows 10. There was no need to install the drivers from the Simbell site.
 
