@@ -38,3 +38,6 @@ The Simbell sensor is quite sensitive and, as delivered, will probably detect no
 3. Adjust the sensitivity of the sensor so that it does not detect any seams in the tape, but still detects the reflective strip (Instructions: [SIMBELL SETUP - ADJUSTING TRANSMITTER SENSITIVITY](https://www.simbell.co.uk/video.htm))
 
 When making changes and testing your setup, you can do some testing by moving the bell past the sensor with your hands, but before declaring victory, make sure to do some ringing so you can see how the sensor responds to the full range of motion at realistic speeds.
+
+## Windows 10 S Mode, Simbell, and Abel
+Bellringing using a simulator can be achieved with a cheap Windows 10 laptop running Abel and Simbell. But in order to install Abel software and the Simbell drivers, you need to make sure that your laptop is not running Windows 10 *S* or Windows 10 *in S Mode* (which is the same thing). You can switch Windows 10 out of S Mode without cost, so don't be afraid to buy a laptop with "Windows 10 S". Windows 10 Home works fine. Instructions: [How to switch out of S Mode](https://support.microsoft.com/en-gb/help/4456067/windows-10-switch-out-of-s-mode)
